@@ -1,0 +1,234 @@
+.form-field {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: var(--color-tipe);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  /* text-align: left; */
+}
+
+.form__title {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  margin-top: 12px;
+  margin-bottom: 4px;
+
+  display: block;
+  color: var(--color-tipe);
+}
+
+.form__input {
+  width: 100%;
+  margin: 0;
+  padding: 11px 42px;
+  //   height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 14px;
+
+  transition: border-color 250ms var(--cubic), color 250ms var(--cubic);
+  outline: 0;
+
+  //   &:hover,
+  &:focus {
+    border-color: var(--color-link);
+    outline: none;
+  }
+}
+
+// &:focus+.form__icon {
+//     fill: var(--color-link);
+// }
+
+.form__icon {
+  //   width: 11px;
+  //   fill: var(--logo-color);
+
+  position: absolute;
+
+  width: 18px;
+  height: 18px;
+  left: 12px;
+  top: 50%;
+  fill: currentColor;
+  transform: translateY(-50%);
+  //   display: inline-block;
+
+  transition: fill 250ms var(--cubic);
+}
+
+&:hover,
+&:focus {
+  fill: var(--color-link);
+  cursor: pointer;
+  // border-color: var(--color-link);
+}
+
+.form__input:focus + &,
+.form__input:hover + & {
+  fill: var(--accent-color);
+}
+
+.form__label {
+  display: inline-block;
+  width: 100%;
+  /* margin-bottom: 10px; */
+  font-size: 12px;
+  color: var(--text-color);
+}
+
+.form-field-textarea {
+  margin-bottom: 20px;
+}
+
+.form__input-wrapper {
+  position: relative;
+  /* margin-top: 6px; */
+}
+
+.form__comment {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+
+  /* margin-top: 6px; */
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  cursor: pointer;
+
+  margin-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+
+  transition: border-color 250ms var(--cubic);
+  color: var(--main-color);
+  /* text-transform: uppercase; */
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+    /* text-transform: uppercase; */
+  }
+
+  &:hover,
+  &:focus {
+    fill: var(--color-link);
+    border-color: var(--color-link);
+    outline: none;
+  }
+}
+
+.policy {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.form__checkbox-link {
+  color: var(--color-link);
+  text-decoration: underline;
+  border-bottom: var(--color-link);
+}
+
+.form__checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 23px;
+  font-weight: 400;
+  //   justify-content: center;
+  font-size: 14px;
+  //   margin-bottom: 30px;
+  color: var(--color-tipe);
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  &::before {
+    display: inline-block;
+    content: '';
+    width: 16px;
+    height: 15px;
+
+    position: absolute;
+    margin-left: -23px;
+
+    border: 2px solid var(--text-color);
+    border-radius: 2px;
+    cursor: pointer;
+
+    // margin-right: 8px;
+    /* margin-left: 12px; */
+  }
+}
+
+// .form__checkbox-input {
+//   display: inline-flex;
+//   align-items: center;
+//   position: absolute;
+
+.form__checkbox-input:checked + .form__checkbox-label:before,
+.form__checkbox-input:focus + .form__checkbox-label:before {
+  background-image: url(../images/icons/icon-check.svg);
+  border-color: transparent;
+  background-color: var(--color-link);
+
+  background-origin: border-box;
+  background-size: contain;
+
+  background-repeat: no-repeat;
+}
+
+.modal__form-btn {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  align-self: center;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  color: var(--primary-bg-color);
+  background-color: var(--color-link);
+  border-radius: 4px;
+  border: none;
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: box-shadow 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-link);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .form__checkbox-label,
+  .form__checkbox-link {
+    font-size: 12px;
+  }
+}

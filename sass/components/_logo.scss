@@ -1,0 +1,23 @@
+.logo {
+  font-family: Raleway;
+
+  @include font(24px, 700, 29px);
+
+  font-style: normal;
+  color: var(--text-color);
+  letter-spacing: 0.03em;
+
+  // animation-duration: 1000ms;
+  // animation-iteration-count: 2;
+
+    @media screen and (min-width: 1200px) {
+    font-size: 26px;
+}
+
+// .header__logo {
+//   margin-right: 93px;
+// }
+
+.logo--accent {
+  color: var(--color-link);
+}
