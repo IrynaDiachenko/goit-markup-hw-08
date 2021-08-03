@@ -35,10 +35,9 @@
   align-items: center;
 }
 
-.menu__list {
+.menu {
   display: flex;
   align-items: center;
-  list-style: none;
   margin-left: 93px;
 
   @media screen and (max-width: 768px) {
@@ -75,19 +74,15 @@
   &::after {
     position: absolute;
     left: 0;
-    bottom: -10px;
+    bottom: -33px;
+
     content: '';
     width: 100%;
     height: 4px;
     display: block;
     background-color: var(--color-link);
     border-radius: 2px;
-
     transition: opasity 250ms var(--cubic);
-
-    @media screen and (min-width: 768px) {
-      bottom: -31px;
-    }
   }
 }
 
@@ -96,10 +91,34 @@
 //   }
 // }
 
+.burger-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+  line-height: 0;
+}
+
+.burger-btn__icon {
+  fill: var(--text-color);
+  transition: fill 250ms var(--cubic);
+  border: none;
+
+  &:hover,
+  &:focus {
+    fill: var(--color-link);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .contacts {
   margin-left: auto;
   color: var(--text-color);
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
 
   @media screen and (max-width: 768px) {
@@ -111,9 +130,9 @@
   }
 }
 
-.contacts__item:first-child {
-  margin-bottom: 0;
-}
+// .contacts__item:first-child {
+//   margin-bottom: 0;
+// }
 
 .contact__item:not(:last-child) {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -125,50 +144,41 @@
 }
 
 .contacts__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
   color: var(--color-tipe);
 
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-
-  padding-top: 5px;
-  padding-bottom: 5px;
-
-  @media screen and (min-width: 1200px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-
   transition: color 250ms var(--cubic);
+
+  // padding-top: 5px;
+  // padding-bottom: 5px;
+
+  // @media screen and (min-width: 1200px) {
+  //   padding-top: 32px;
+  //   padding-bottom: 32px;
 
   &:hover,
   &:focus {
     color: var(--color-link);
     fill: var(--color-link);
   }
-
-  &:first-child {
-    margin-bottom: 16px;
-  }
 }
+
+// &:first-child {
+//   margin-bottom: 16px;
+// }
 
 .contacts__icon {
   fill: currentColor;
   margin-right: 10px;
 }
 
-// .contacts__link:hover & {
-//   fill: var(--color-link);
+// .menu__contacts {
+//   display: none;
 // }
-
-// .contacts__link:focus & {
-//   fill: var(--color-link);
-// }
-
-.menu__contacts {
-  display: none;
-}
