@@ -1,24 +1,3 @@
-// .hero {
-//   background-color: var(--text-color);
-//   background-image: linear-gradient(
-//       to right,
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url(../images/hero.jpg);
-//   padding-top: 200px;
-//   padding-bottom: 200px;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-
-//   max-width: 1600px;
-//   height: 600px;
-//   outline: 1px solid #000000;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-
 .hero__title {
   color: var(--main-color);
   margin-bottom: 30px;
@@ -37,25 +16,33 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .hero__overlay {
+  .hero {
+    background-color: var(--text-color);
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 118px;
     padding-bottom: 118px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    // background-position: center;
+    // background-size: 480px 400px;
+    // text-align: center;
+
     background-image: linear-gradient(
+        to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url(/images/studio/hero-img-mobile.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 480px 400px;
-    text-align: center;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
   screen and (min-resolution: 192dpi) and (min-width: 320px),
   screen and (min-resolution: 2dppx) and (min-width: 320px) {
-  .hero__overlay {
+  .hero {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -65,7 +52,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .hero__overlay {
+  .hero {
     margin-left: auto;
     margin-right: auto;
     padding-top: 118px;
@@ -86,7 +73,7 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .hero__overlay {
+    .hero {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
@@ -97,7 +84,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .hero__overlay {
+  .hero {
     max-width: 1600px;
     min-height: 600px;
     margin-left: auto;
@@ -117,7 +104,7 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .hero__overlay {
+    .hero {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
@@ -127,7 +114,7 @@
   }
 }
 
-// .hero__align { overlay
+// .hero__align {
 //   margin-left: auto;
 //   margin-right: auto;
 //   max-width: 696px;
@@ -136,6 +123,11 @@
 // }
 
 .button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+
   color: var(--main-color);
   background-color: var(--color-link);
   font-weight: 700;
@@ -145,11 +137,6 @@
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15%);
   border-radius: 4px;
-
-  padding: 10px 32px;
-  cursor: pointer;
-
-  display: inline-block;
-
+  border-color: transparent;
   cursor: pointer;
 }

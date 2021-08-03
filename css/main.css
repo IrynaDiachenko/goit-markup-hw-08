@@ -653,25 +653,28 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .hero__overlay {
+  .hero {
+    background-color: var(--text-color);
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero-img-mobile.jpeg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 480px 400px;
-    text-align: center;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero-img-mobile.jpeg);
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
-  .hero__overlay {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero-img-mobile@2x.jpeg);
   }
 }
 
 @media screen and (min-width: 768px) {
-  .hero__overlay {
+  .hero {
     margin-left: auto;
     margin-right: auto;
     padding-top: 118px;
@@ -686,13 +689,13 @@ body {
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero__overlay {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero-img-tablet@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .hero__overlay {
+  .hero {
     max-width: 1600px;
     min-height: 600px;
     margin-left: auto;
@@ -707,12 +710,16 @@ body {
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero__overlay {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero-img-desktop@2x.jpg);
   }
 }
 
 .button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
   color: var(--main-color);
   background-color: var(--color-link);
   font-weight: 700;
@@ -721,15 +728,8 @@ body {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding: 10px 32px;
+  border-color: transparent;
   cursor: pointer;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.form-field {
-  position: relative;
-  margin-bottom: 10px;
 }
 
 .form__label {
@@ -804,7 +804,7 @@ body {
 
 .form__input-wrapper {
   position: relative;
-  /* margin-top: 6px; */
+  margin-bottom: 8px;
 }
 
 .form__comment {
