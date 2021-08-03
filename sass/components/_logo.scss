@@ -1,23 +1,37 @@
 .logo {
   font-family: Raleway;
 
-  @include font(24px, 700, 29px);
-
+  @include font(26px, 700, 30px);
   font-style: normal;
   color: var(--text-color);
   letter-spacing: 0.03em;
 
-  // animation-duration: 1000ms;
-  // animation-iteration-count: 2;
-
-    @media screen and (min-width: 1200px) {
-    font-size: 26px;
+  animation-duration: 1000ms;
+  animation-iteration-count: 2;
 }
 
-// .header__logo {
-//   margin-right: 93px;
-// }
+.header__logo {
+  margin-right: 93px;
+}
 
 .logo--accent {
   color: var(--color-link);
+}
+
+.footer-logo {
+  color: var(--main-color);
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.15;
+  font-style: normal;
+
+  letter-spacing: 0.03em;
+}
+
+.footer-logo-accent {
+  color: var(--main-color);
 }

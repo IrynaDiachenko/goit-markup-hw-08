@@ -15,8 +15,11 @@ ol {
   margin: 0;
 }
 
-img {
+img,
+svg {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -24,12 +27,12 @@ a {
 }
 
 li {
-  // display: list-item;
-  // text-align: -webkit-match-parent;
-
   list-style-type: none;
 }
 
+.address {
+  font-style: normal;
+}
 // *,
 // *::after,
 // *::before {

@@ -4,30 +4,28 @@
 // // Animation
 // $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 
-
 // Colors
 :root {
-    --text-color: #212121;
-    /*коричневый*/
-    --color-link: #2196F3;
-    /*голубой*/
-    --color-tipe: #757575;
-    /*серый*/
-    --main-color: #FFFFFF;
-    /*белый*/
-    --color-font: #2F303A;
-    /*темно серый*/
-    --color-icons: #AFB1B8;
-    /*светло-серый*/
-    --bg-color-light: #f5f4fa;
-    /*cветло-светло-серый*/
-    --opposite-basic-color: #000000;
-    /*черный*/
-    --card-set-gap: 30px;
-    --primary-bg-color: #fff;
-    /*cлоновая кость*/
-    --clients-bg-color: #E5E5E5;
-    --cubic: cubic-bezier(0.4, 0, 0.2, 1);
-    --logo-color: #000;
-
+  --text-color: #212121;
+  /*коричневый*/
+  --color-link: #2196f3;
+  /*голубой*/
+  --color-tipe: #757575;
+  /*серый*/
+  --main-color: #ffffff;
+  /*белый*/
+  --color-font: #2f303a;
+  /*темно серый*/
+  --color-icons: #afb1b8;
+  /*светло-серый*/
+  --bg-color-light: #f5f4fa;
+  /*cветло-светло-серый*/
+  --opposite-basic-color: #000000;
+  /*черный*/
+  --card-set-gap: 30px;
+  --primary-bg-color: #fff;
+  /*cлоновая кость*/
+  --clients-bg-color: #e5e5e5;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --logo-color: #000;
 }

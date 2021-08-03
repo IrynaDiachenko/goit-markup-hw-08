@@ -1,55 +1,84 @@
 .command {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--bg-color-light);
 }
 
-.team {
-  // display: flex;
-  // flex-wrap: wrap;
-  /* margin-right: calc(-1 * var(--card-set-gap)); */
-  flex-direction: row;
-  justify-content: center;
-  margin-top: calc(-1 * var(--card-set-gap));
-  margin-left: calc(-1 * var(--card-set-gap));
+.team-section__title {
+  margin-bottom: 30px;
+
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
 }
 
 .team__item {
-  // flex-basis: calc(100% / 4 - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
-  background-color: var(--main-color);
+  margin-bottom: 30px;
+  background-color: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  text-align: center;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  letter-spacing: 0.03em;
 }
-
-// .team__item+.team__item {
-//     margin-left: 30px;
-// }
 
 .member {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .member__name {
-  color: var(--text-color);
-  margin-bottom: 0;
-  color: var(--title-text-color);
-  font-size: 16px;
+  margin-bottom: 10px;
+
   font-weight: 500;
+  color: var(--text-color);
 }
 
 .member__position {
-  color: var(--color-tipe);
-  margin-top: 10px;
   margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  text-align: center;
-  /* margin-top: 0px;
-    margin-bottom: 0px; */
+  font-weight: 400;
+  color: var(--color-tipe);
+}
+
+.team-list-img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+
+  .team__item {
+    width: calc((100% - 60px) / 2);
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .command {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .team {
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+
+  .team__item {
+    width: calc((100% - 120px) / 4);
+    margin-right: 30px;
+  }
 }

@@ -1,3 +1,11 @@
-$mobile: 576px;
-$tablet: 768px;
-$desktop: 1148px;
+// $mobile: 576px;
+// $tablet: 768px;
+// $desktop: 1148px;
+
+$breakpoints: (
+  'mobileBox': 450px,
+  'mobile': 480px,
+  'tabletBox': 738px,
+  'tablet': 768px,
+  'desktop': 1200px,
+) !default;

@@ -1,6 +1,8 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-<symbol id="icon-menu_24px" viewBox="0 0 48 32"><path d="M0 5V0h48v5H0zm0 14h48v-6H0v6zm0 13h48v-5H0v5z" /></symbol>
+<symbol id="icon-menu" viewBox="0 0 32 32">
+<path d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
+</symbol>
 <symbol id="icon-close_24px" viewBox="0 0 32 32"><path fill="var(--color1, #2196f3)" d="M31 3l-3-3-12 13L3 0 0 3l13 13L0 28l3 3 13-12 12 12 3-3-12-12L31 3z" /></symbol>
         <symbol id="icon-icon-check" viewBox="0 0 34 32">
             <path fill="var(--color1, #2196f3)" d="M4 0h26c2 0 4 2 4 4v24c0 2-2 4-4 4H4c-2 0-4-2-4-4V4c0-2 2-4 4-4z" />
