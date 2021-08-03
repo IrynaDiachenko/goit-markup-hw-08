@@ -69,19 +69,19 @@
   //   display: inline-block;
 
   transition: fill 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    fill: var(--color-link);
+    cursor: pointer;
+    // border-color: var(--color-link);
+  }
 }
 
-&:hover,
-&:focus {
-  fill: var(--color-link);
-  cursor: pointer;
-  // border-color: var(--color-link);
-}
-
-.form__input:focus + &,
-.form__input:hover + & {
-  fill: var(--accent-color);
-}
+// .form__input:focus + &,
+// .form__input:hover + & {
+//   fill: var(--accent-color);
+// }
 
 .form__label {
   display: inline-block;
