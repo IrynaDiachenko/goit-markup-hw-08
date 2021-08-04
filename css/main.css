@@ -314,7 +314,7 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -322,13 +322,13 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -504,7 +504,6 @@ body {
   letter-spacing: 0.03em;
   animation-duration: 1000ms;
   animation-iteration-count: 2;
-  margin-right: 92px;
   margin-top: 16px;
   margin-bottom: 16px;
 }
@@ -663,13 +662,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero-img-mobile.jpeg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero-img-mobile.jpeg);
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero-img-mobile@2x.jpeg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero-img-mobile@2x.jpeg);
   }
 }
 
@@ -679,7 +678,7 @@ body {
     margin-right: auto;
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero-img-tablet.jpeg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero-img-tablet.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -690,7 +689,7 @@ body {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero-img-tablet@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero-img-tablet@2x.jpeg);
   }
 }
 
@@ -702,7 +701,7 @@ body {
     margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero-img-desktop.jpeg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero-img-desktop.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -711,7 +710,7 @@ body {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/studio/hero-img-desktop@2x.jpeg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero-img-desktop@2x.jpeg);
   }
 }
 
@@ -1007,13 +1006,13 @@ body {
   }
 }
 
-.header__conteiner {
+.header__container {
   display: flex;
   align-items: center;
 }
 
 @media screen and (max-width: 767px) {
-  .header__conteiner {
+  .header__container {
     justify-content: space-between;
   }
 }
@@ -1294,8 +1293,6 @@ body {
   }
   .clients__item {
     width: calc((100% - 90px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
   }
   .clients__link {
     width: 226px;
@@ -1305,7 +1302,6 @@ body {
 @media screen and (min-width: 1200px) {
   .clients__list {
     display: flex;
-    flex-wrap: nowrap;
   }
   s .clients__link {
     width: 170px;
@@ -1691,21 +1687,18 @@ body {
   fill: #fff;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .footer-adress-wrapper {
-    margin-right: 165px;
-  }
-  .footer-wrapper {
-    display: flex;
-    align-items: baseline;
-    width: 600px;
-    margin: 0 auto;
-  }
-  .subscribe-form {
-    flex-direction: column;
-    margin: 0 auto;
-    width: 450px;
-  }
+.footer-wrapper {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.subscribe-form {
+  flex-direction: column;
+  margin: 0 auto;
+  width: 450px;
 }
 
 @media screen and (min-width: 1200px) {
