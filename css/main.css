@@ -1027,15 +1027,56 @@ body {
   margin-left: 93px;
 }
 
-@media screen and (max-width: 768px) {
-  .menu {
-    display: none;
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: block;
+  }
+  .menu__item {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .menu__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .menu__item .menu-container {
+    position: relative;
+    min-height: 200px;
+    padding-top: 48px;
+    padding-left: 40px;
+  }
+  .menu__item .header .container,
+  .menu__item .navigation,
+  .menu__item .menu__list {
+    display: flex;
+    align-items: center;
+  }
+  .menu__item .header .logo {
+    margin-right: 88px;
+  }
+  .menu__item .menu__item:last-child {
+    margin-right: 84px;
+  }
+  .menu__item .contacts__link {
+    font-size: 12px;
   }
 }
 
-.menu__item:not(:last-child) {
-  position: relative;
-  margin-right: 50px;
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .header .logo {
+    margin-right: 94px;
+  }
+  .menu {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .contacts__link {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+  }
+  .menu__item:last-child {
+    margin-right: 302px;
+  }
 }
 
 .menu__link {
@@ -1095,7 +1136,6 @@ body {
 }
 
 .contacts {
-  margin-left: auto;
   color: var(--text-color);
   display: flex;
   flex-direction: column;
@@ -1115,15 +1155,22 @@ body {
   }
 }
 
+.contacts__aligment {
+  margin-left: auto;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contact__item:not(:last-child) {
+  .contacts__item {
     margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .contact__item:not(:last-child) {
-    margin-right: 30px;
+  .contacts__item {
+    position: relative;
+  }
+  .contacts__item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
@@ -1257,7 +1304,8 @@ body {
 
 .clients__item {
   min-width: calc((100% - 30px) / 2);
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .clients__item:nth-child(odd) {
