@@ -19,18 +19,19 @@
 }
 
 .clients__list {
- 
-  margin-bottom: -30px;
-  // margin-left: -30px;
+  flex-wrap: wrap;
+  display: flex;
+  // margin-bottom: -30px;
+  // // margin-left: -30px;
 
-   @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     // justify-content: space-between;
     margin-top: -30px;
     margin-left: -30px;
-
+  }
   @media screen and (min-width: 1200px) {
-   display: flex;
-  flex-wrap: wrap;
+    //  display: flex;
+    // flex-wrap: wrap;
   }
 }
 

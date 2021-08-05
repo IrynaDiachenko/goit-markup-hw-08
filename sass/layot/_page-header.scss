@@ -32,24 +32,21 @@
 
 .navigation {
   display: none;
-  // align-items: center;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
 .menu {
   display: flex;
   align-items: center;
-  margin-left: 93px;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
 }
 
-.navigation {
-  display: block;
-  align-items: center;
-  display: flex;
-}
+// .navigation {
+//   display: block;
+//   align-items: center;
+//   display: flex;
+// }
 
 .menu__item:not(:last-child) {
   position: relative;
@@ -65,7 +62,6 @@
 }
 
 .header .container,
-.navigation,
 .menu__list {
   @include flex-center-vert;
 }

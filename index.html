@@ -27,21 +27,21 @@
         <div class="header__container container">
             <a href="./index.html" lang="en" class="logo header__logo animate_bounce"><span
                     class="logo--accent">Web</span>studio</a>
-            <div class="menu-container">
-                <nav class="navigation">
-                    <ul class="menu">
-                        <li class="menu__item">
-                            <a href="./index.html" class="menu__link menu__link-current">Студия</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="./portfolio.html" class="menu__link">Портфолио</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__link">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            <!-- <div class="menu-container"> -->
+            <nav class="navigation">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="./index.html" class="menu__link menu__link-current">Студия</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./portfolio.html" class="menu__link">Портфолио</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- </div> -->
 
             <button type="button" class="burger-btn" data-menu-open>
                 <svg width="40" height="40" class="burger-btn__icon" aria-label="Переключатель мобильного меню">
@@ -211,13 +211,12 @@
 
 
     <!--Service-->
-    <!-- <section class="section service-space">
-        <div class="container"> -->
+    <section class="section service-space">
+        <div class="container">
 
-    <div class="wrap">
-        <h2 class="section__title">Чем мы занимаемся</h2>
-        <ul class="service list">
-            <li class="service__item">
+            <h2 class="section__title">Чем мы занимаемся</h2>
+            <ul class="service list">
+                <!-- <li class="service__item">
                 <div class="service-wrapper">
                     <picture class="service-picture">
                         <source media="(min-width: 1200px)"
@@ -229,38 +228,56 @@
                     </picture>
                     <p class="service__text">Десктопные приложения</p>
                 </div>
-            </li>
+            </li> -->
 
-            <li class="service__item">
-                <div class="service-wrapper">
-                    <picture class="service-picture">
-                        <source media="(min-width: 1200px)"
-                            srcset="./images/studio/img-2.webp 1x, ./images/studio/img-2@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 1200px)"
-                            srcset="./images/studio/img-2.jpg 1x, ./images/studio/img-2@2x.jpg 2x">
 
-                        <img class="about-img" src="./images/studio/img-2.jpg" alt="сидит за ноутбуком">
-                    </picture>
-                    <p class="service__text">Мобильные приложения</p>
-                </div>
-            </li>
+                <li class="service__item">
+                    <div class="service-wrapper">
+                        <picture class="service-picture">
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/studio/img-1.webp 1x, ./images/studio/img-1@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/studio/img-1.jpg 1x, ./images/studio/img-1@2x.jpg 2x">
 
-            <li class="service__item">
-                <div class="service-wrapper">
-                    <picture class="service-picture">
-                        <source media="(min-width: 1200px)"
-                            srcset="./images/studio/img-3.webp 1x, ./images/studio/img-3@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 1200px)"
-                            srcset="./images/studio/img-3.jpg 1x, ./images/studio/img-3@2x.jpg 2x">
+                            <img class="about-img" src="./images/studio/img-1.jpeg" alt="сидит за ноутбуком">
+                        </picture>
+                        <p class="service__text">Десктопные приложения</p>
+                    </div>
+                </li>
 
-                        <img class="about-img" src="./images/studio/img-3.jpg" alt="планшет">
-                    </picture>
-                    <p class="service__text">Дизайнерские решения</p>
-                </div>
-            </li>
+                <li class="service__item">
+                    <div class="service-wrapper">
+                        <picture class="service-picture">
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/studio/img-2.webp 1x, ./images/studio/img-2@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/studio/img-2.jpg 1x, ./images/studio/img-2@2x.jpg 2x">
 
-        </ul>
-    </div>
+                            <img class="about-img" src="./images/studio/img-2.jpg" alt="сидит за ноутбуком">
+                        </picture>
+                        <p class="service__text">Мобильные приложения</p>
+                    </div>
+                </li>
+
+                <li class="service__item">
+                    <div class="service-wrapper">
+                        <picture class="service-picture">
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/studio/img-3.webp 1x, ./images/studio/img-3@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/studio/img-3.jpg 1x, ./images/studio/img-3@2x.jpg 2x">
+
+                            <img class="about-img" src="./images/studio/img-3.jpg" alt="планшет">
+                        </picture>
+                        <p class="service__text">Дизайнерские решения</p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
 
     </section>
 
@@ -351,6 +368,7 @@
 
                         <img class="team-list-img" src="./images/studio/team2.jpeg" alt="разработчик">
                     </picture>
+
                     <div class="member">
                         <h3 class="member__name">Ольга Репина</h3>
                         <p lang="en" class="member__position">Frontend Developer</p>
@@ -682,7 +700,7 @@
                 <!-- FORM -->
 
                 <!-- <div class="form-field"> -->
-                <label class="form__label">
+                <label class="form__field">
                     <p class="form__title">Имя</p>
                     <span class="form__input-wrapper">
                         <input class="form__input" type="text" name="user-name" pattern="[a-zA-Zа-яёА-ЯЁ]" title="Имя должно
@@ -716,7 +734,7 @@
                 </label>
 
 
-                <label for="comment" class="form__field">
+                <label for="comment" class="form__field field">
                     <p class="form__title">Коментарий</p>
                     <textarea class="form__comment" rows="10" name="user-comment"
                         placeholder="Введите текст"></textarea>
