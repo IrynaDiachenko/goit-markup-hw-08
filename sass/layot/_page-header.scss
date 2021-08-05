@@ -84,8 +84,7 @@
   }
 
   .menu {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 0;
   }
 
   .contacts__link {
@@ -94,9 +93,9 @@
     font-size: 14px;
   }
 
-  .menu__item:last-child {
-    margin-right: 302px;
-  }
+  // .menu__item:last-child {
+  //   margin-right: 302px;
+  // }
 }
 
 .menu__link {
