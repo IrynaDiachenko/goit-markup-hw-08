@@ -51,6 +51,7 @@
 .menu__item:not(:last-child) {
   position: relative;
   margin-right: 50px;
+  margin-bottom: 10px;
 }
 
 .menu-container {
@@ -88,10 +89,6 @@
     padding-bottom: 5px;
     font-size: 14px;
   }
-
-  // .menu__item:last-child {
-  //   margin-right: 302px;
-  // }
 }
 
 .menu__link {
@@ -122,7 +119,7 @@
     height: 4px;
     background-color: var(--color-link);
     border-radius: 2px;
-    bottom: 0;
+    bottom: -40px;
     transition: opasity 250ms var(--cubic);
   }
 }
@@ -181,7 +178,7 @@
 
 // .contact__item:not(:last-child) {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contacts__item {
+  .contact__item:not(:last-child) {
     margin-bottom: 10px;
   }
 }
