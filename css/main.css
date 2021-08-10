@@ -1364,6 +1364,12 @@ body {
   border-color: var(--color-link);
 }
 
+.container-portfolio {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .portfolio-header {
   border-bottom: 1px solid #ececec;
 }
@@ -1397,79 +1403,46 @@ body {
   letter-spacing: 0.03em;
 }
 
+.picture {
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .picture {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
 .picture-item {
   max-width: 450px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
-}
-
-.picture-item:hover, .picture-item:focus {
-  transform: translateY(-100%);
+  width: 100px;
 }
 
 .picture-item:last-child {
   margin-bottom: 0;
 }
 
-.picture {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -30px;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .picture {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    flex-basis: calc((100% - 60px) / 2);
-    margin-left: -30px;
-    margin-top: -30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .picture {
-    flex-basis: calc((100% - 90px) / 3);
-  }
-}
-
-.picture-item {
-  display: flex;
-  flex-direction: column;
-  width: 450px;
-}
-
-@media screen and (max-width: 767px) {
-  .picture-item:not(:last-child) {
-    margin-bottom: 30px;
-  }
+.picture-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 @media screen and (min-width: 768px) {
   .picture-item {
     margin-right: 30px;
-    margin-bottom: 30px;
-    width: 354px;
+    flex-basis: calc((100% - 60px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .picture-item {
-    width: 370px;
+    flex-basis: calc((100% - 90px) / 3);
   }
-}
-
-.picture-link {
-  display: flex;
-  flex-direction: column;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.picture-link:hover, .picture-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .legend {
@@ -1480,28 +1453,26 @@ body {
   padding: 20px 24px;
 }
 
-.picture-item-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
 .overlay {
   position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--main-color);
+  padding: 63px 24px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Roboto;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
-  letter-spacing: 0.03em;
-  padding: 24px;
+  margin: 0;
   overflow: auto;
-  background-color: rgba(33, 150, 243, 0.9);
-  transition: transform 250ms var(--cubic);
+  /* overflow-y: scroll; */
   transform: translateY(100%);
+  opacity: 1;
+  transition: transform 250ms var(--cubic);
+  overflow: hidden;
 }
 
 @media screen and (min-width: 480px) {
@@ -1520,6 +1491,16 @@ body {
   .overlay {
     padding-top: 62px;
   }
+}
+
+.picture-item-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.picture-item-wrapper:hover .overlay,
+.picture-item-wrapper .picture-link:focus .overlay {
+  transform: translateX(0%);
 }
 
 .portfolio-img {
@@ -1764,13 +1745,12 @@ body {
   font-size: 14px;
 }
 
-.footer-social {
-  width: 206px;
-}
-
 @media screen and (max-width: 767px) {
   .footer-social {
-    margin: 0 auto 60px;
+    margin-bottom: 60px;
+  }
+  .footer-adress-wrapper {
+    margin-bottom: 60px;
   }
 }
 
@@ -1783,7 +1763,11 @@ body {
 
 .footer-social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-social-link {
@@ -1858,16 +1842,17 @@ body {
   fill: #fff;
 }
 
-.footer-wrapper {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0 auto;
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
 }
 
 .subscribe-form {
-  display: flex;
   flex-direction: column;
   margin: 0 auto;
 }

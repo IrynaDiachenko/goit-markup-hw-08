@@ -163,18 +163,19 @@
   fill: #fff;
 }
 
-// @media screen and (min-width: 768px) {
-// .footer-wrapper {
-//   display: flex;
-//   align-items: baseline;
-//   flex-wrap: wrap;
-//   justify-content: space-around;
-//   // width: 600px;
-//   margin: 0 auto;
-// }}
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    // width: 600px;
+    margin: 0 auto;
+  }
+}
 
 .subscribe-form {
-  display: flex;
+  // display: flex;
   flex-direction: column;
   margin: 0 auto;
   // width: 450px;
@@ -284,8 +285,8 @@
 
 // /* FOOTER SUBSCRIBE */
 
-// .footer-subscribe {
-//   margin-left: 98px;
+// . {
+//   footer-subscribemargin-left: 98px;
 // }
 
 // .subscribe-title {

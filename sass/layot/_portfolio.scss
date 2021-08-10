@@ -1,3 +1,9 @@
+.container-portfolio {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .portfolio-header {
   border-bottom: 1px solid #ececec;
 }
@@ -31,8 +37,9 @@
 }
 
 .picture {
-  flex-direction: column;
+  // flex-direction: column;
   align-items: center;
+  // display: flex;
 
   @media screen and (min-width: 768px) {
     display: flex;
