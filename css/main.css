@@ -1046,7 +1046,6 @@ body {
 }
 
 .menu__item:not(:last-child) {
-  position: relative;
   margin-right: 50px;
 }
 
@@ -1086,6 +1085,7 @@ body {
 }
 
 .menu__link {
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -1404,7 +1404,7 @@ body {
 }
 
 .picture-item:hover, .picture-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  transform: translateY(-100%);
 }
 
 .picture-item:last-child {
@@ -1502,11 +1502,6 @@ body {
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform 250ms var(--cubic);
   transform: translateY(100%);
-}
-
-.picture-link:hover .overlay,
-.picture-link:focus .overlay {
-  transform: translateY(-100%);
 }
 
 @media screen and (min-width: 480px) {
@@ -1812,7 +1807,7 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-right: 0;
+  margin-right: 13px;
   padding: 10px 28px 10px 29px;
   color: var(--main-color);
   background-color: var(--color-link);
@@ -1839,7 +1834,7 @@ body {
 }
 
 .subscribe-email {
-  width: 100%;
+  width: 358px;
   height: 50px;
   margin-bottom: 20px;
   padding: 15px;
@@ -1872,9 +1867,9 @@ body {
 }
 
 .subscribe-form {
+  display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 450px;
 }
 
 @media screen and (min-width: 1200px) {
